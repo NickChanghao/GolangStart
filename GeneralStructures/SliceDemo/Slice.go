@@ -1,6 +1,7 @@
 package main
 
 import (
+	"BasicTools/Slice"
 	"fmt"
 	"github.com/ecodeclub/ekit/slice"
 )
@@ -11,6 +12,10 @@ func main() {
 		mySlice = append(mySlice, i)
 		fmt.Printf("Len: %d, Cap: %d\n", len(mySlice), cap(mySlice))
 	}
-	sumResult := slice.Sum[int](mySlice)
+	sumResult := Slice.SumUp[int](mySlice) // 求Slice之和
+	sumResult1 := slice.Sum[int](mySlice)
+	smallest := Slice.Min[int](mySlice)
 	fmt.Println(sumResult)
+	fmt.Println(sumResult1)
+	fmt.Println(smallest)
 }
