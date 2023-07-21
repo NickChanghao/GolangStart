@@ -1,11 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	var a = 10
-	var b = 20
-	fmt.Println("The result =", Sum(a, b))
+	//var a = 10
+	//var b = 20
+	//fmt.Println("The result =", Sum(a, b))
+
+	fmt.Println()
 }
 
 func Sum(a int, b int) int {
